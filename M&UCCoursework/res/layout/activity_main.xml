@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pls.pass.me.courseworkofdoom.MainActivity" >
+    
+    <Spinner 
+        android:id="@+id/SpinnerSelectScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBBBBB"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp">
+    </Spinner>
+        <RelativeLayout
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content">
+    		
+            <Button
+                android:id="@+id/QuizStartButton"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Start Quiz"
+                android:layout_toRightOf="@+id/SpinnerSelectQuiz">
+            </Button>
+            
+            <Spinner 
+            	android:id="@+id/SpinnerSelectQuiz"
+            	android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_margin="4dp"
+    			android:padding="8dp"
+    			android:background="#BBBBBB">            
+            </Spinner>            
+        </RelativeLayout>
+    <ScrollView
+        android:id="@+id/ScrollMain"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:id="@+id/TableQuizDisplay">
+         
+    </TableLayout>
+    </ScrollView>
+</LinearLayout>

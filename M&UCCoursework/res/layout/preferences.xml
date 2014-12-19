@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map marker colour:"/>
+
+          <Spinner 
+        android:id="@+id/SpinnerSelectColour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BBBBBB"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp">
+    </Spinner>
+    
+          <TableLayout 
+              android:layout_width="match_parent"
+        			  android:layout_height="wrap_content">
+        			  
+              <TableRow 
+                  android:layout_width="match_parent"
+        			  android:layout_height="wrap_content">
+                  <SurfaceView 
+                      android:id="@+id/colourCanvas"
+                      android:layout_width="match_parent"
+        			  android:layout_height="10dp"
+                      />
+                  
+              </TableRow>
+              <TableRow 
+                  android:layout_width="wrap_content"
+        			  android:layout_height="wrap_content">
+                  <Button 
+                      android:id="@+id/ButtonSavePreferences"
+                      android:text="Save and Quit"
+                      android:layout_width="wrap_content"
+        			  android:layout_height="wrap_content"/>
+                  
+                  <Button 
+                      android:id="@+id/ButtonQuitPreferences"
+                      android:text="Quit"
+                      android:layout_width="wrap_content"
+        			  android:layout_height="wrap_content"/>
+              </TableRow>
+          </TableLayout>
+
+</LinearLayout>
